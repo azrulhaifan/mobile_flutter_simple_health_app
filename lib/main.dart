@@ -173,6 +173,12 @@ class _MyHomePageState extends State<MyHomePage> {
       setState(() {
         _counter = the_step;
       });
+
+      // CARA LAIN PAKAI HEALTH POIN
+      List<HealthDataPoint> healthData = await health.getHealthDataFromTypes(midnight, now, types);
+      for (int i = 0; i < healthData.length; i++) {
+        log("DATAKUU " + json.encode(healthData[i]));
+      }
     }
 
   @override
