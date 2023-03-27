@@ -111,64 +111,12 @@ class _MyHomePageState extends State<MyHomePage> {
       var midnight = DateTime(now.year, now.month, now.day);
       int? steps = await health.getTotalStepsInInterval(midnight, now);
 
-      int? step1 = await health.getTotalStepsInInterval(midnight, time1);
-      int? step2 = await health.getTotalStepsInInterval(time1, time2);
-      int? step3 = await health.getTotalStepsInInterval(time2, time3);
-      int? step4 = await health.getTotalStepsInInterval(time3, time4);
-      int? step5 = await health.getTotalStepsInInterval(time4, time5);
-      int? step6 = await health.getTotalStepsInInterval(time5, time6);
-      int? step7 = await health.getTotalStepsInInterval(time6, time7);
-      int? step8 = await health.getTotalStepsInInterval(time7, time8);
-      int? step9 = await health.getTotalStepsInInterval(time8, time9);
-      int? step10 = await health.getTotalStepsInInterval(time9, time10);
-      int? step11 = await health.getTotalStepsInInterval(time10, time11);
-      int? step12 = await health.getTotalStepsInInterval(time11, time12);
-      int? step13 = await health.getTotalStepsInInterval(time12, time13);
-      int? step14 = await health.getTotalStepsInInterval(time13, time14);
-      int? step15 = await health.getTotalStepsInInterval(time14, time15);
-      int? step16 = await health.getTotalStepsInInterval(time15, time16);
-      int? step17 = await health.getTotalStepsInInterval(time16, time17);
-      int? step18 = await health.getTotalStepsInInterval(time17, time18);
-      int? step19 = await health.getTotalStepsInInterval(time18, time19);
-      int? step20 = await health.getTotalStepsInInterval(time19, time20);
-      int? step21 = await health.getTotalStepsInInterval(time20, time21);
-      int? step22 = await health.getTotalStepsInInterval(time21, time22);
-      int? step23 = await health.getTotalStepsInInterval(time23, time23);
-      int? step24 = await health.getTotalStepsInInterval(time23, now);
-
       int the_step = 181297;
       if (steps == null) {
         the_step = 0;
       } else {
         the_step = steps;
       }
-
-      // log('my total step is: $steps');
-
-      // log('my step 1 is : $step1');
-      // log('my step 2 is : $step2');
-      // log('my step 3 is : $step3');
-      // log('my step 4 is : $step4');
-      // log('my step 5 is : $step5');
-      // log('my step 6 is : $step6');
-      // log('my step 7 is : $step7');
-      // log('my step 8 is : $step8');
-      // log('my step 9 is : $step9');
-      // log('my step 10 is : $step10');
-      // log('my step 11 is : $step11');
-      // log('my step 12 is : $step12');
-      // log('my step 13 is : $step13');
-      // log('my step 14 is : $step14');
-      // log('my step 15 is : $step15');
-      // log('my step 16 is : $step16');
-      // log('my step 17 is : $step17');
-      // log('my step 18 is : $step18');
-      // log('my step 19 is : $step19');
-      // log('my step 20 is : $step20');
-      // log('my step 21 is : $step21');
-      // log('my step 22 is : $step22');
-      // log('my step 23 is : $step23');
-      // log('my step 24 is : $step24');
 
       setState(() {
         _counter = the_step;
@@ -255,7 +203,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
       // MULAI PERULANGAN
       for (int i = 0; i < healthData.length; i++) {
-        // log("DATAKUU " + json.encode(healthData[i]));
+        log("DATAKUU " + json.encode(healthData[i]));
 
         var data_type = healthData[i].typeString;
         dynamic data_val = healthData[i].value;
