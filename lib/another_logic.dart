@@ -201,6 +201,31 @@ class _MyHomePageState extends State<MyHomePage> {
       double data_step24 = 0;
       double data_cal24 = 0;
 
+      double data_duration1 = 0;
+      double data_duration2 = 0;
+      double data_duration3 = 0;
+      double data_duration4 = 0;
+      double data_duration5 = 0;
+      double data_duration6 = 0;
+      double data_duration7 = 0;
+      double data_duration8 = 0;
+      double data_duration9 = 0;
+      double data_duration10 = 0;
+      double data_duration11 = 0;
+      double data_duration12 = 0;
+      double data_duration13 = 0;
+      double data_duration14 = 0;
+      double data_duration15 = 0;
+      double data_duration16 = 0;
+      double data_duration17 = 0;
+      double data_duration18 = 0;
+      double data_duration19 = 0;
+      double data_duration20 = 0;
+      double data_duration21 = 0;
+      double data_duration22 = 0;
+      double data_duration23 = 0;
+      double data_duration24 = 0;
+
       // MULAI PERULANGAN
       for (int i = 0; i < healthData.length; i++) {
         log("DATAKUU " + json.encode(healthData[i]));
@@ -210,125 +235,196 @@ class _MyHomePageState extends State<MyHomePage> {
         var date_from_epoch = healthData[i].dateFrom.millisecondsSinceEpoch;
         var date_to_epoch = healthData[i].dateTo.millisecondsSinceEpoch;
 
-
         // s/d jam 1
         if (date_to_epoch <= time1_epoch) {
-          if (data_type == "STEPS") data_step1 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step1 += double.parse(data_val.toString());
+            data_duration1 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal1 += double.parse(data_val.toString());
         }
         // s/d jam 2
         else if (date_to_epoch >= time1_epoch && date_to_epoch <= time2_epoch) {
-          if (data_type == "STEPS") data_step2 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step2 += double.parse(data_val.toString());
+            data_duration2 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal2 += double.parse(data_val.toString());
         }
         // s/d jam 3
         else if (date_to_epoch <= time3_epoch) {
-          if (data_type == "STEPS") data_step3 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step3 += double.parse(data_val.toString());
+            data_duration3 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal3 += double.parse(data_val.toString());
         }
         // s/d jam 4
         else if (date_to_epoch <= time4_epoch) {
-          if (data_type == "STEPS") data_step4 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step4 += double.parse(data_val.toString());
+            data_duration4 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal4 += double.parse(data_val.toString());
         }
         // s/d jam 5
         else if (date_to_epoch <= time5_epoch) {
-          if (data_type == "STEPS") data_step5 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step5 += double.parse(data_val.toString());
+            data_duration5 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal5 += double.parse(data_val.toString());
         }
         // s/d jam 6
         else if (date_to_epoch <= time6_epoch) {
-          if (data_type == "STEPS") data_step6 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step6 += double.parse(data_val.toString());
+            data_duration6 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal6 += double.parse(data_val.toString());
         }
         // s/d jam 7
         else if (date_to_epoch <= time7_epoch) {
-          if (data_type == "STEPS") data_step7 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step7 += double.parse(data_val.toString());
+            data_duration7 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal7 += double.parse(data_val.toString());
         }
         // s/d jam 8
         else if (date_to_epoch <= time8_epoch) {
-          if (data_type == "STEPS") data_step8 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step8 += double.parse(data_val.toString());
+            data_duration8 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal8 += double.parse(data_val.toString());
         }
         // s/d jam 9
         else if (date_to_epoch <= time9_epoch) {
-          if (data_type == "STEPS") data_step9 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step9 += double.parse(data_val.toString());
+            data_duration9 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal9 += double.parse(data_val.toString());
         }
         // s/d jam 10
         else if (date_to_epoch <= time10_epoch) {
-          if (data_type == "STEPS") data_step10 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step10 += double.parse(data_val.toString());
+            data_duration10 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal10 += double.parse(data_val.toString());
         }
         // s/d jam 11
         else if (date_to_epoch <= time11_epoch) {
-          if (data_type == "STEPS") data_step11 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step11 += double.parse(data_val.toString());
+            data_duration11 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal11 += double.parse(data_val.toString());
         }
         // s/d jam 12
         else if (date_to_epoch <= time12_epoch) {
-          if (data_type == "STEPS") data_step12 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step12 += double.parse(data_val.toString());
+            data_duration12 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal12 += double.parse(data_val.toString());
         }
         // s/d jam 13
         else if (date_to_epoch <= time13_epoch) {
-          if (data_type == "STEPS") data_step13 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step13 += double.parse(data_val.toString());
+            data_duration13 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal13 += double.parse(data_val.toString());
         }
         // s/d jam 14
         else if (date_to_epoch <= time14_epoch) {
-          if (data_type == "STEPS") data_step14 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step14 += double.parse(data_val.toString());
+            data_duration14 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal14 += double.parse(data_val.toString());
         }
         // s/d jam 15
         else if (date_to_epoch <= time15_epoch) {
-          if (data_type == "STEPS") data_step15 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step15 += double.parse(data_val.toString());
+            data_duration15 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal15 += double.parse(data_val.toString());
         }
         // s/d jam 16
         else if (date_to_epoch <= time16_epoch) {
-          if (data_type == "STEPS") data_step16 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step16 += double.parse(data_val.toString());
+            data_duration16 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal16 += double.parse(data_val.toString());
         }
         // s/d jam 17
         else if (date_to_epoch <= time17_epoch) {
-          if (data_type == "STEPS") data_step17 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step17 += double.parse(data_val.toString());
+            data_duration17 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal17 += double.parse(data_val.toString());
         }
         // s/d jam 18
         else if (date_to_epoch <= time18_epoch) {
-          if (data_type == "STEPS") data_step18 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step18 += double.parse(data_val.toString());
+            data_duration18 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal18 += double.parse(data_val.toString());
         }
         // s/d jam 19
         else if (date_to_epoch <= time19_epoch) {
-          if (data_type == "STEPS") data_step19 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step19 += double.parse(data_val.toString());
+            data_duration19 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal19 += double.parse(data_val.toString());
         }
         // s/d jam 20
         else if (date_to_epoch <= time20_epoch) {
-          if (data_type == "STEPS") data_step20 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step20 += double.parse(data_val.toString());
+            data_duration20 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal20 += double.parse(data_val.toString());
         }
         // s/d jam 21
         else if (date_to_epoch <= time21_epoch) {
-          if (data_type == "STEPS") data_step21 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step21 += double.parse(data_val.toString());
+            data_duration21 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal21 += double.parse(data_val.toString());
         }
         // s/d jam 22
         else if (date_to_epoch <= time22_epoch) {
-          if (data_type == "STEPS") data_step22 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step22 += double.parse(data_val.toString());
+            data_duration22 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal22 += double.parse(data_val.toString());
         }
         // s/d jam 23
         else if (date_to_epoch <= time23_epoch) {
-          if (data_type == "STEPS") data_step23 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step23 += double.parse(data_val.toString());
+            data_duration23 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal23 += double.parse(data_val.toString());
         }
         // s/d jam 24
         else if (date_to_epoch <= time24_epoch) {
-          if (data_type == "STEPS") data_step24 += double.parse(data_val.toString());
+          if (data_type == "STEPS") {
+            data_step24 += double.parse(data_val.toString());
+            data_duration24 += ((date_to_epoch - date_from_epoch) / 1000);
+          }
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal24 += double.parse(data_val.toString());
         }
       }
@@ -405,6 +501,11 @@ class _MyHomePageState extends State<MyHomePage> {
       
       log("DATA STEP JAM 24 : " + data_step24.toString());
       log("DATA CAL JAM 24 : " + data_cal24.toString());
+
+      log("DATA DURATION JAM 1 : " + data_duration1.toString());
+      log("DATA DURATION JAM 2 : " + data_duration2.toString());
+      log("DATA DURATION JAM 3 : " + data_duration3.toString());
+      log("DATA DURATION JAM 4 : " + data_duration4.toString());
     }
 
   @override
