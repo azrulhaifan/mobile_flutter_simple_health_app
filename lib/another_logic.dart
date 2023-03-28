@@ -212,122 +212,122 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
         // s/d jam 1
-        if ((date_from_epoch >= time0_epoch && date_from_epoch <= time1_epoch) && (date_to_epoch >= time0_epoch && date_to_epoch <= time1_epoch)) {
+        if (date_to_epoch <= time1_epoch) {
           if (data_type == "STEPS") data_step1 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal1 += double.parse(data_val.toString());
         }
         // s/d jam 2
-        if ((date_from_epoch >= time1_epoch && date_from_epoch <= time2_epoch) && (date_to_epoch >= time1_epoch && date_to_epoch <= time2_epoch)) {
+        else if (date_to_epoch >= time1_epoch && date_to_epoch <= time2_epoch) {
           if (data_type == "STEPS") data_step2 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal2 += double.parse(data_val.toString());
         }
         // s/d jam 3
-        if ((date_from_epoch >= time2_epoch && date_from_epoch <= time3_epoch) && (date_to_epoch >= time2_epoch && date_to_epoch <= time3_epoch)) {
+        else if (date_to_epoch <= time3_epoch) {
           if (data_type == "STEPS") data_step3 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal3 += double.parse(data_val.toString());
         }
         // s/d jam 4
-        if ((date_from_epoch >= time3_epoch && date_from_epoch <= time4_epoch) && (date_to_epoch >= time3_epoch && date_to_epoch <= time4_epoch)) {
+        else if (date_to_epoch <= time4_epoch) {
           if (data_type == "STEPS") data_step4 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal4 += double.parse(data_val.toString());
         }
         // s/d jam 5
-        if ((date_from_epoch >= time4_epoch && date_from_epoch <= time5_epoch) && (date_to_epoch >= time4_epoch && date_to_epoch <= time5_epoch)) {
+        else if (date_to_epoch <= time5_epoch) {
           if (data_type == "STEPS") data_step5 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal5 += double.parse(data_val.toString());
         }
         // s/d jam 6
-        if ((date_from_epoch >= time5_epoch && date_from_epoch <= time6_epoch) && (date_to_epoch >= time5_epoch && date_to_epoch <= time6_epoch)) {
+        else if (date_to_epoch <= time6_epoch) {
           if (data_type == "STEPS") data_step6 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal6 += double.parse(data_val.toString());
         }
         // s/d jam 7
-        if ((date_from_epoch >= time6_epoch && date_from_epoch <= time7_epoch) && (date_to_epoch >= time6_epoch && date_to_epoch <= time7_epoch)) {
+        else if (date_to_epoch <= time7_epoch) {
           if (data_type == "STEPS") data_step7 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal7 += double.parse(data_val.toString());
         }
         // s/d jam 8
-        if ((date_from_epoch >= time7_epoch && date_from_epoch <= time8_epoch) && (date_to_epoch >= time7_epoch && date_to_epoch <= time8_epoch)) {
+        else if (date_to_epoch <= time8_epoch) {
           if (data_type == "STEPS") data_step8 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal8 += double.parse(data_val.toString());
         }
         // s/d jam 9
-        if ((date_from_epoch >= time8_epoch && date_from_epoch <= time9_epoch) && (date_to_epoch >= time8_epoch && date_to_epoch <= time9_epoch)) {
+        else if (date_to_epoch <= time9_epoch) {
           if (data_type == "STEPS") data_step9 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal9 += double.parse(data_val.toString());
         }
         // s/d jam 10
-        if ((date_from_epoch >= time9_epoch && date_from_epoch <= time10_epoch) && (date_to_epoch >= time9_epoch && date_to_epoch <= time10_epoch)) {
+        else if (date_to_epoch <= time10_epoch) {
           if (data_type == "STEPS") data_step10 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal10 += double.parse(data_val.toString());
         }
         // s/d jam 11
-        if ((date_from_epoch >= time10_epoch && date_from_epoch <= time11_epoch) && (date_to_epoch >= time10_epoch && date_to_epoch <= time11_epoch)) {
+        else if (date_to_epoch <= time11_epoch) {
           if (data_type == "STEPS") data_step11 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal11 += double.parse(data_val.toString());
         }
         // s/d jam 12
-        if ((date_from_epoch >= time11_epoch && date_from_epoch <= time12_epoch) && (date_to_epoch >= time11_epoch && date_to_epoch <= time12_epoch)) {
+        else if (date_to_epoch <= time12_epoch) {
           if (data_type == "STEPS") data_step12 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal12 += double.parse(data_val.toString());
         }
         // s/d jam 13
-        if ((date_from_epoch >= time12_epoch && date_from_epoch <= time13_epoch) && (date_to_epoch >= time12_epoch && date_to_epoch <= time13_epoch)) {
+        else if (date_to_epoch <= time13_epoch) {
           if (data_type == "STEPS") data_step13 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal13 += double.parse(data_val.toString());
         }
         // s/d jam 14
-        if ((date_from_epoch >= time13_epoch && date_from_epoch <= time14_epoch) && (date_to_epoch >= time13_epoch && date_to_epoch <= time14_epoch)) {
+        else if (date_to_epoch <= time14_epoch) {
           if (data_type == "STEPS") data_step14 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal14 += double.parse(data_val.toString());
         }
         // s/d jam 15
-        if ((date_from_epoch >= time14_epoch && date_from_epoch <= time15_epoch) && (date_to_epoch >= time14_epoch && date_to_epoch <= time15_epoch)) {
+        else if (date_to_epoch <= time15_epoch) {
           if (data_type == "STEPS") data_step15 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal15 += double.parse(data_val.toString());
         }
         // s/d jam 16
-        if ((date_from_epoch >= time15_epoch && date_from_epoch <= time16_epoch) && (date_to_epoch >= time15_epoch && date_to_epoch <= time16_epoch)) {
+        else if (date_to_epoch <= time16_epoch) {
           if (data_type == "STEPS") data_step16 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal16 += double.parse(data_val.toString());
         }
         // s/d jam 17
-        if ((date_from_epoch >= time16_epoch && date_from_epoch <= time17_epoch) && (date_to_epoch >= time16_epoch && date_to_epoch <= time17_epoch)) {
+        else if (date_to_epoch <= time17_epoch) {
           if (data_type == "STEPS") data_step17 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal17 += double.parse(data_val.toString());
         }
         // s/d jam 18
-        if ((date_from_epoch >= time17_epoch && date_from_epoch <= time18_epoch) && (date_to_epoch >= time17_epoch && date_to_epoch <= time18_epoch)) {
+        else if (date_to_epoch <= time18_epoch) {
           if (data_type == "STEPS") data_step18 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal18 += double.parse(data_val.toString());
         }
         // s/d jam 19
-        if ((date_from_epoch >= time18_epoch && date_from_epoch <= time19_epoch) && (date_to_epoch >= time18_epoch && date_to_epoch <= time19_epoch)) {
+        else if (date_to_epoch <= time19_epoch) {
           if (data_type == "STEPS") data_step19 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal19 += double.parse(data_val.toString());
         }
         // s/d jam 20
-        if ((date_from_epoch >= time19_epoch && date_from_epoch <= time20_epoch) && (date_to_epoch >= time19_epoch && date_to_epoch <= time20_epoch)) {
+        else if (date_to_epoch <= time20_epoch) {
           if (data_type == "STEPS") data_step20 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal20 += double.parse(data_val.toString());
         }
         // s/d jam 21
-        if ((date_from_epoch >= time20_epoch && date_from_epoch <= time21_epoch) && (date_to_epoch >= time20_epoch && date_to_epoch <= time21_epoch)) {
+        else if (date_to_epoch <= time21_epoch) {
           if (data_type == "STEPS") data_step21 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal21 += double.parse(data_val.toString());
         }
         // s/d jam 22
-        if ((date_from_epoch >= time21_epoch && date_from_epoch <= time22_epoch) && (date_to_epoch >= time21_epoch && date_to_epoch <= time22_epoch)) {
+        else if (date_to_epoch <= time22_epoch) {
           if (data_type == "STEPS") data_step22 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal22 += double.parse(data_val.toString());
         }
         // s/d jam 23
-        if ((date_from_epoch >= time22_epoch && date_from_epoch <= time23_epoch) && (date_to_epoch >= time22_epoch && date_to_epoch <= time23_epoch)) {
+        else if (date_to_epoch <= time23_epoch) {
           if (data_type == "STEPS") data_step23 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal23 += double.parse(data_val.toString());
         }
         // s/d jam 24
-        if ((date_from_epoch >= time23_epoch && date_from_epoch <= time24_epoch) && (date_to_epoch >= time23_epoch && date_to_epoch <= time24_epoch)) {
+        else if (date_to_epoch <= time24_epoch) {
           if (data_type == "STEPS") data_step24 += double.parse(data_val.toString());
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal24 += double.parse(data_val.toString());
         }
