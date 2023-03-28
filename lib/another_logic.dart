@@ -244,7 +244,7 @@ class _MyHomePageState extends State<MyHomePage> {
           if (data_type == "ACTIVE_ENERGY_BURNED") data_cal1 += double.parse(data_val.toString());
         }
         // s/d jam 2
-        else if (date_to_epoch >= time1_epoch && date_to_epoch <= time2_epoch) {
+        else if (date_to_epoch <= time2_epoch) {
           if (data_type == "STEPS") {
             data_step2 += double.parse(data_val.toString());
             data_duration2 += ((date_to_epoch - date_from_epoch) / 1000);
